@@ -7,7 +7,7 @@ let n1 =prompt ("Digite o primeiro número")
 let n2 =prompt ("Digite o segundo número")
 let n3 =prompt ("Digite o terceiro número")
 
-if(n1 <= n2 && n2 < n3){
+if(n1 < n2 && n2 < n3){
     console.log ("Ordem crescente")
 }else {
     console.log ("Não está em ordem crescente")
