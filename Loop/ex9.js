@@ -4,6 +4,6 @@
 let usuario = parseInt (prompt ("Digite um número inteiro: "))
 
 while (usuario >= 1) {
-    usuario --;
     console.log (usuario)
+    usuario --;
 }
