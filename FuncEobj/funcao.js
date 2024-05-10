@@ -54,25 +54,29 @@ while (num < 20) {
 }
 }
 
-let menu = prompt("Escolha uma opção: \n 1 - Exemplo, Imprimir números de 1 a 10 (for) \n 2 - Exemplo, Imprimir números pares de 1 a 10. (for) \n 3 - Exemplo, Imprima os números ímpares de 0 a 50  (for) \n 4 - Exemplo, Calcular a soma dos números de 1 a 100 (While) \n 5 - Exemplo, Contagem regressiva até 0 (While) \n 6 - Exemplo, Imprimir números pares de 0 a 20 (While)")
-
-switch (menu) {
-    case "1":
-        Exemplo1 ()
-        break;
-    case "2":
-        Exemplo2 ()
-        break;
-    case "3":
-        Exemplo3 ()
-        break;
-    case "4":
-        Exemplo4 ()
-        break;
-    case "5":
-        Exemplo5 ()
-        break;
-    case "6":
-        Exemplo6 ()
-        break;
-}
+do{
+    let menu = prompt("Escolha uma opção: \n 1 - Exemplo, Imprimir números de 1 a 10 (for) \n 2 - Exemplo, Imprimir números pares de 1 a 10. (for) \n 3 - Exemplo, Imprima os números ímpares de 0 a 50  (for) \n 4 - Exemplo, Calcular a soma dos números de 1 a 100 (While) \n 5 - Exemplo, Contagem regressiva até 0 (While) \n 6 - Exemplo, Imprimir números pares de 0 a 20 (While)\n 0 - Para fechar o menu")
+    
+    switch (menu) {
+        case "1":
+            Exemplo1 ()
+            break;
+        case "2":
+            Exemplo2 ()
+            break;
+        case "3":
+            Exemplo3 ()
+            break;
+        case "4":
+            Exemplo4 ()
+            break;
+        case "5":
+            Exemplo5 ()
+            break;
+        case "6":
+            Exemplo6 ()
+            break;
+        case "0":
+            Saida()
+            break;
+}}while (menu != 0)
