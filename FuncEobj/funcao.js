@@ -5,6 +5,8 @@
 
 // O usuario deverá digitar 0 para sair do menu
 
+let menu;
+
 function Exemplo1 (){
     for (let cont=1; cont<=10; cont++){
 
@@ -55,7 +57,7 @@ while (num < 20) {
 }
 
 do{
-    let menu = prompt("Escolha uma opção: \n 1 - Exemplo, Imprimir números de 1 a 10 (for) \n 2 - Exemplo, Imprimir números pares de 1 a 10. (for) \n 3 - Exemplo, Imprima os números ímpares de 0 a 50  (for) \n 4 - Exemplo, Calcular a soma dos números de 1 a 100 (While) \n 5 - Exemplo, Contagem regressiva até 0 (While) \n 6 - Exemplo, Imprimir números pares de 0 a 20 (While)\n 0 - Para fechar o menu")
+    menu = prompt("Escolha uma opção: \n 1 - Exemplo, Imprimir números de 1 a 10 (for) \n 2 - Exemplo, Imprimir números pares de 1 a 10. (for) \n 3 - Exemplo, Imprima os números ímpares de 0 a 50  (for) \n 4 - Exemplo, Calcular a soma dos números de 1 a 100 (While) \n 5 - Exemplo, Contagem regressiva até 0 (While) \n 6 - Exemplo, Imprimir números pares de 0 a 20 (While)\n 0 - Para fechar o menu")
     
     switch (menu) {
         case "1":
@@ -76,7 +78,5 @@ do{
         case "6":
             Exemplo6 ()
             break;
-        case "0":
-            Saida()
-            break;
-}}while (menu != 0)
+}}
+while (menu != "0")
